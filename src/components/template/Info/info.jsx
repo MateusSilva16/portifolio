@@ -67,7 +67,9 @@ const Info = () => {
               </div>
             </S.ItemAddress>
           </S.Address>
-          <S.LinkButton href="">Download currículo</S.LinkButton>
+          <S.LinkButton href="https://drive.google.com/u/0/uc?id=1y45-wiIJ8VWz3J9Q_mySdYiXBVQTQ8WX&export=download">
+            Download currículo
+          </S.LinkButton>
         </S.ContainerProfile>
 
         <S.ContainerDescription>

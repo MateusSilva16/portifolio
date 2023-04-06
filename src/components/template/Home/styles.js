@@ -4,11 +4,16 @@ import tokens from '../../../utils/tokens';
 
 export const Conatainer = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: black;
+
+  @media (max-width: 650px) {
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
 `;
 
 export const ContainerDescription = styled.div`
@@ -39,6 +44,13 @@ export const ContainerDescription = styled.div`
   p {
     font-size: 15px;
   }
+
+  @media (max-width: 650px) {
+    width: 85%;
+    top: 0%;
+    margin-left: 0px;
+    position: relative;
+  }
 `;
 
 export const Title = styled.div`
@@ -46,12 +58,19 @@ export const Title = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  color:  ${tokens.colors.secondary4};;
+  color: ${tokens.colors.secondary4};
 
   h1 {
     font-size: 40px;
     margin-right: 0.3em;
     color: ${tokens.colors.light};
+  }
+
+  @media (max-width: 650px) {
+    font-size: 20px;
+    h1 {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -95,6 +114,10 @@ export const ContainerImages = styled.div`
   top: 0;
   right: 0;
   z-index: 10;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 export const Overlay = styled.div`
   position: relative;

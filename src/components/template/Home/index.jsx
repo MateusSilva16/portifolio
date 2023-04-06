@@ -34,17 +34,22 @@ const Home = () => {
           />
         </S.Title>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum
-          odit dignissimos ex molestias, delectus minus rem inventore
-          voluptatibus fuga suscipit nulla aut, dicta error molestiae voluptatem
-          voluptate quis? Molestiae.
+          Busco oportunidades no mercado do desenvolvimento web, tenho
+          conhecimento e facilidade com estilização de sites, e me aperfeiçoando
+          cada dia mais com a lógica.
         </p>
         <S.ContainerButtons>
-          <Button
-            action={console.log('Currículo')}
-            text={'Currículo'}
-            icon={<BsCloudDownload size={15} />}
-          />
+          <S.LinkButton
+            to={
+              'https://drive.google.com/u/0/uc?id=1y45-wiIJ8VWz3J9Q_mySdYiXBVQTQ8WX&export=download'
+            }
+          >
+            <div>
+              <BsCloudDownload size={15} />
+            </div>
+            <div>Currículo</div>
+          </S.LinkButton>
+
           <S.LinkButton to={'/info'}>
             <div>
               <BsInfoCircle size={15} />

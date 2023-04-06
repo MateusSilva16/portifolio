@@ -18,6 +18,10 @@ export const Lista = styled.ul`
   align-items: center;
   width: 100%;
   margin: 0;
+
+  @media (max-width: 650px) {
+    padding: 0;
+  }
 `;
 
 export const ContainerIcons = styled.div`
@@ -28,6 +32,15 @@ export const ContainerIcons = styled.div`
   right: 60px;
   top: 0;
   text-transform: uppercase;
+
+  @media (max-width: 650px) {
+    right: 0px; 
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Icons = styled.a`
@@ -38,4 +51,6 @@ export const Icons = styled.a`
     transform: scale(1.2);
     transition: 0.5s;
   }
+
+
 `;

@@ -6,11 +6,11 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height:100%;
+  height: 100%;
   width: 100%;
   padding-bottom: 20px;
 
-  h1{
+  h1 {
     font-size: 30px;
     background: ${tokens.colors.gradient};
     background-clip: text;
@@ -20,6 +20,7 @@ export const Container = styled.div`
 
   @media (max-width: 900px) {
     align-items: center;
+    margin-top: 40px;
   }
 `;
 
@@ -99,8 +100,25 @@ export const ImageCard = styled.img`
 `;
 
 export const Image = styled.img`
+  @media (max-width: 768px) {
+    display: none;
+  }
   object-fit: cover;
   width: 100%;
   position: relative;
   border-radius: 18px;
+  display: flex;
+`;
+
+export const ImageMobile = styled.img`
+  @media (max-width: 768px) {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    position: relative;
+    border-radius: 18px;
+  }
+  display: none;
 `;

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as S from './styles';
 import { BsZoomIn } from 'react-icons/bs';
 import tokens from '../../../utils/tokens';
 import { PersonalProjectProps, PrivateProjectProps } from './data';
 import SwpierCustom from '../../Carousel';
 import { SwiperSlide } from 'swiper/react';
-import { useState } from 'react';
 import { Modal } from '../../Modal';
+import { useLocation } from 'react-router-dom';
 
 const Project = () => {
   const [modalBudget, setModalBudget] = useState(false);
@@ -14,11 +14,8 @@ const Project = () => {
   const [modalGeneral, setModalGeneral] = useState(false);
   const [modalZax, setModalZax] = useState(false);
   const [modalContablidade, setModalContablidade] = useState(false);
+  const [isOpened, setIsOpened] = useState(false);
 
-  /*   const Open = () => {
-    setModalBudget(true);
-  };
-*/
   const Close = () => {
     setModalBudget(false);
     setModalFilmesECinemas(false);
@@ -80,15 +77,23 @@ const Project = () => {
           <SwpierCustom>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/budget/tela1.png" />
+
+              <S.ImageMobile src="/img/projectsImg/budget/mobile1.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/budget/tela2.png" />
+
+              <S.ImageMobile src="/img/projectsImg/budget/mobile2.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/budget/tela3.png" />
+
+              <S.ImageMobile src="/img/projectsImg/budget/mobile3.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/budget/tela4.png" />
+
+              <S.ImageMobile src="/img/projectsImg/budget/mobile4.png" />
             </SwiperSlide>
           </SwpierCustom>
         </Modal>
@@ -99,15 +104,23 @@ const Project = () => {
           <SwpierCustom>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/filmes_games/tela1.png" />
+
+              <S.ImageMobile src="/img/projectsImg/filmes_games/mobile1.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/filmes_games/tela2.png" />
+
+              <S.ImageMobile src="/img/projectsImg/filmes_games/mobile2.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/filmes_games/tela3.png" />
+
+              <S.ImageMobile src="/img/projectsImg/filmes_games/mobile3.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/filmes_games/tela4.png" />
+
+              <S.ImageMobile src="/img/projectsImg/filmes_games/mobile4.png" />
             </SwiperSlide>
           </SwpierCustom>
         </Modal>
@@ -118,21 +131,33 @@ const Project = () => {
           <SwpierCustom>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela1.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile1.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela2.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile2.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela3.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile3.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela4.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile4.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela5.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile5.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/general/tela6.png" />
+
+              <S.ImageMobile src="/img/projectsImg/general/mobile6.png" />
             </SwiperSlide>
           </SwpierCustom>
         </Modal>
@@ -143,12 +168,18 @@ const Project = () => {
           <SwpierCustom>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/zax/tela1.png" />
+
+              <S.ImageMobile src="/img/projectsImg/zax/mobile1.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/zax/tela2.png" />
+
+              <S.ImageMobile src="/img/projectsImg/zax/mobile3.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/zax/tela3.png" />
+
+              <S.ImageMobile src="/img/projectsImg/zax/mobile4.png" />
             </SwiperSlide>
           </SwpierCustom>
         </Modal>
@@ -159,15 +190,23 @@ const Project = () => {
           <SwpierCustom>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/contabilade/tela1.png" />
+
+              <S.ImageMobile src="/img/projectsImg/contabilade/mobile1.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/contabilade/tela2.png" />
+
+              <S.ImageMobile src="/img/projectsImg/contabilade/mobile3.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/contabilade/tela3.png" />
+
+              <S.ImageMobile src="/img/projectsImg/contabilade/mobile4.png" />
             </SwiperSlide>
             <SwiperSlide>
               <S.Image src="/img/projectsImg/contabilade/tela4.png" />
+
+              <S.ImageMobile src="/img/projectsImg/contabilade/mobile5.png" />
             </SwiperSlide>
           </SwpierCustom>
         </Modal>

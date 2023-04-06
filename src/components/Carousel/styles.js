@@ -26,11 +26,13 @@ export const Container = styled.div`
     color: lightblue;
   }
 
-/*   .swiper-slide:nth-child(1n) {
+  /*  .swiper-slide:nth-child(1n) {
     background-color: rgb(206, 17, 17);
+    width: 10px;
+    height: 100%;
   }
 
-  .swiper-slide:nth-child(2n) {
+ .swiper-slide:nth-child(2n) {
     background-color: rgb(0, 140, 255);
   }
 
@@ -64,5 +66,5 @@ export const Container = styled.div`
 
   .swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
-  } */
+  }  */
 `;

@@ -80,16 +80,16 @@ const Info = () => {
               </S.Title>
 
               <S.Description>
-                Óla, tudo bem ?<br />
-                Sou Mateus de Oliveira Silva, e venho estudando bastante por
-                meio da internet, entre video aulas e cursos onlines em algumas
-                plataformas de ensino online, não tenho formação em nível
-                superior ainda, mas busco conseguir ingressar em alguma
-                instituição. Trabalhei na empresa{' '}
+                Olá visitante !<br />
+                Me chamo Mateus de Oliveira Silva, nos últimos 2
+                anos venho estudando programação web de forma on-line através
+                das plataformas YouTube e Udemy. Por enquanto não possuo
+                formação superior na área, mas tenho pretensão de ingressar
+                futuramente em alguma instituição. Trabalhei na empresa{' '}
                 <a href="https://github.com/ZAX-systems" target="_blank">
                   Zax Soluções Tecnologicas
                 </a>{' '}
-                durante 4 meses como estágiario
+                durante 5 meses como estágiario
               </S.Description>
             </>
             <>
